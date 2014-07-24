@@ -1,0 +1,54 @@
+#home .ui-controlgroup {
+  width: 60%;
+  margin: 0 auto;
+  max-width: 300px;
+}
+h1 {
+	font-size: 180%;
+}
+h2 {
+	font-size: 160%;
+}
+h3 {
+	font-size: 140%;
+}
+
+#home img, #blog img, #menu img, #hours img {
+  width: 100%;
+  max-width: 200px;
+  display: block;
+  margin: 10px auto;
+}
+
+#home, #blog, #about-editor {
+	background: #DFDFDF;
+}
+#menu h1, #menu h2, #menu h3, #hours h1, #hours h2, #hours h3 {
+	color:#000000;
+	text-shadow: 2px 2px 2px #000;
+}
+#menu p, #hours p {
+	color:#000000;
+	text-shadow: 1px 1px 1px #000;
+}
+#nightlyspecials article.nightlyspecials-content img.logo {
+	width: 100%;
+  	max-width: 200px;
+  	display: block;
+  	clear: both;
+  	margin: 10px auto;
+}
+.clear {
+	clear:both;
+}
+#nightlyspecials article.nightlyspecials-content img.nightlyspecials-header {
+	width: 100%;
+  	max-width: 232px;
+  	display: block;
+  	clear: both;
+  	margin: 0 auto;
+  	margin-top: 5px;
+  	padding-bottom: 0px;
+  	margin-bottom:-10px
+  	
+}

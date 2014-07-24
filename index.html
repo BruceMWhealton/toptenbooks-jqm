@@ -1,0 +1,187 @@
+<!doctype html>
+<html>
+	<head>
+		<title>jQuery Mobile Page</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<link rel="stylesheet" href="css/themes/topten.min.css" />
+		<link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.3/jquery.mobile.structure-1.4.3.min.css" />
+
+		<link rel="stylesheet" href="css/style.css">
+		<!--<script src="js/jquery-1.11.1.min.js"></script>
+		<script src="js/jquery.mobile-1.4.2.min.js"></script>-->
+		<script src="js/jquery.js"></script>
+		<script src="js/getBlogList.js"></script>
+		
+		<script>
+			$(document).on("mobileinit", function(evt) {
+				// Change Default Page Transition.
+				$.mobile.defaultPageTransition = "flip";
+			});
+		</script>
+		<script src="js/jquerymobile.min.js"></script>
+	</head>
+	<body>
+		<section data-role="page" id="home">
+			<header data-theme="c" data-role="header">
+				<h2>The Top Ten Books</h2>
+				<a href="#home" class="ui-btn-left ui-btn ui-btn-inline
+				ui-mini ui-corner-all
+				ui-icon-home" data-theme="a">Home</a>
+
+				<a href="#about-editor" class="ui-btn-right ui-btn ui-btn-inline
+				ui-mini ui-corner-all
+				ui-icon-info" data-rel="dialog" data-transition="pop">About Editor</a>
+
+			</header><!-- header -->
+			<article data-role="content" id="home-content" data-theme="c">
+				<h1>The Top Ten Books</h1>
+				<h2>Edited by J. Peder Zane</h2>
+				<h2>Welcome</h2>
+
+
+				<p>This is the best of times and the worst of times for passionate readers. We are living in a Golden Age, as online retailers make millions of books just a click away. Never before have so many works been within such easy reach. But when anything is possible, choice becomes torture. What to pick? Where to start? This one? That one? How about this—and that? What will I like? What's worth my time?</p>
+
+				<p>To answer these questions, we turned to the experts, asking 125 top American and British authors to list their 10 favorite works of fiction of all time. The results were published in "The Top Ten: Writers Pick Their Favorite Books." Edited by J. Peder Zane, "The Top Ten" is the ultimate guide to the world's greatest books. As Norman Mailer, Annie Proulx, Stephen King, Joyce Carol Oates, Jonathan Franzen, Claire Messud, Margaret Drabble, Michael Chabon, Peter Carey and others celebrate the books that have meant the most to them, you'll be reminded of books you love and introduced to works awaiting your discovery.</p>
+
+				<p>This Website is expanding the book. In addition to posting annotated versions of all 125 lists from "The Top Ten," we are gathering new lists from prominent authors. We are highlighting lists submitted by our readers — maybe even yours! And our blog will include updates on the wrld of classic books. Through it all we will help you answer that most pressing literary question: What should I read next?</p>
+
+				<p><em>Free and Easy Way to Support this Site</em></p>
+
+				<p>Use the Top Ten as your gateway to Amazon and we'll receive a small commission on everything your purchase.  <a href="http://www.amazon.com/exec/obidos/ASIN/0393328406/ref=nosim/totebo-20">Just click here.</a> THANKS!</p>
+				
+
+			</article><!-- /content -->
+			<footer data-theme="b" data-role="footer" data-position="fixed">
+				<nav data-role="navbar">
+					<ul>
+						<li>
+							<a href="#home" class="ui-btn ui-icon-grid ui-btn-icon-top">Home</a>
+						</li>
+
+						<li>
+							<a href="#location" class="ui-btn ui-icon-location ui-btn-icon-top">Submit Your List</a>
+						</li>
+						<li>
+							<a href="#hours" class="ui-btn ui-icon-clock ui-btn-icon-top">The List Of Books</a>
+						</li>
+						<li>
+							<a href="#blogItemList" class="ui-btn ui-icon-edit ui-btn-icon-top">List of Blog Entries</a>
+						</li>
+
+					</ul>
+				</nav>
+			</footer><!-- footer -->
+		</section><!-- / home page -->
+
+		<!-- page: blog list-->
+		<section id="blogItemList" data-role="page" data-title="Blog">
+			<header data-theme="c" data-role="header" data-position="fixed">
+				<h2>The Top Ten Books</h2>
+				<a href="#home" class="ui-btn-left ui-btn ui-btn-inline
+				ui-mini ui-corner-all
+				ui-icon-home" data-theme="a">Home</a>
+
+				<a href="#about-editor" class="ui-btn-right ui-btn ui-btn-inline
+				ui-mini ui-corner-all
+				ui-icon-info" data-rel="dialog">About Editor</a>
+			</header><!-- header -->
+			<div data-role="content" id="postList">
+				
+			</div>
+			<footer data-theme="b" data-role="footer" data-position="fixed">
+				<nav data-role="navbar">
+					<ul>
+						<li>
+							<a href="#home" class="ui-btn ui-icon-grid ui-btn-icon-top">Home</a>
+						</li>
+
+						<li>
+							<a href="#location" class="ui-btn ui-icon-location ui-btn-icon-top">Submit Your List</a>
+						</li>
+						<li>
+							<a href="#hours" class="ui-btn ui-icon-clock ui-btn-icon-top">The List Of Books</a>
+						</li>
+						<li>
+							<a href="#blogItemList" class="ui-btn ui-icon-edit ui-btn-icon-top">List of Blog Posts</a>
+						</li>
+
+					</ul>
+				</nav>
+			</footer><!-- footer -->
+		</section><!-- page: blogItemList -->
+		<section id="blogPost" data-role="page" data-title="Blog Post">
+			<header data-theme="c" data-role="header" data-position="fixed">
+				<h2>The Top Ten Books</h2>
+				<a href="#home" class="ui-btn-left ui-btn ui-btn-inline
+				ui-mini ui-corner-all
+				ui-icon-home" data-theme="a">Home</a>
+
+				<a href="#about-editor" class="ui-btn-right ui-btn ui-btn-inline
+				ui-mini ui-corner-all
+				ui-icon-info" data-rel="dialog">About Editor</a>
+			</header><!-- header -->
+			<div data-role="content" id="post">
+				
+			</div>
+			<footer data-theme="b" data-role="footer" data-position="fixed">
+				<nav data-role="navbar">
+					<ul>
+						<li>
+							<a href="#home" class="ui-btn ui-icon-grid ui-btn-icon-top">Home</a>
+						</li>
+
+						<li>
+							<a href="#location" class="ui-btn ui-icon-location ui-btn-icon-top">Submit Your List</a>
+						</li>
+						<li>
+							<a href="#hours" class="ui-btn ui-icon-clock ui-btn-icon-top">The List Of Books</a>
+						</li>
+						<li>
+							<a href="#blogItemList" class="ui-btn ui-icon-edit ui-btn-icon-top">List of Blog Posts</a>
+						</li>
+
+					</ul>
+				</nav>
+			</footer><!-- footer -->
+		</section><!-- page: blogItemList -->
+		<!-- page: menu -->
+		<section id="about-editor" data-role="page" data-title="Hours" data-dialog="true">
+			<header data-theme="c" data-role="header">
+				<h2>The Top Ten Books</h2>
+				<a href="#home" class="ui-btn-left ui-btn ui-btn-inline
+				ui-mini ui-corner-all
+				ui-icon-home" data-transition="pop">Home</a>
+
+			</header><!-- header -->
+			<article data-role="content" id="about-editor-content" data-theme="c">
+
+				<p>J. Peder Zane is writer and editor who has worked at The New York Times and The News & Observer of Raleigh, North Carolina. His work has won several national awards including the Distinguished Writing Award for Commentary from the American Society of Newspaper Editors. He is a former member of the Board of the National Book Critics Circle. He has contributed to and edited two books published by W.W. Norton, <a href="http://www.amazon.com/exec/obidos/ASIN/0393328406/ref=nosim/thtote-20" target="_blank"> "The Top Ten: Writers Pick Their Favorite Books" (2007)</a> and <a href="http://www.amazon.com/exec/obidos/ASIN/0393325407/ref=nosim/thtote-20" target="_blank">"Remarkable Reads: Writers and Their Adventures in Reading" (2004).</a> His new book, written with Professor Adrian Bejan of Duke University, is titled <a href="http://www.amazon.com/exec/obidos/ASIN/0385534612/ref=nosim/totebo-20" target="_blank">  "Design in Nature: How the Constructal Law Governs Evolution in Biology, Physics, Technology and Social Organization" (Doubleday).</a> Peder teaches Journalism and Mass Communication at St. Augustine's College in Raleigh. He is a graduate of the Collegiate School, Wesleyan University and Columbia University's Graduate School of Journalism. <a href="http://jpederzane.com/" target="_blank">Read his blog here.</a> See his<a href="http://en.wikipedia.org/wiki/John_Peder_Zane" target="_blank">wikipedia entry here.</a></p>
+
+			</article><!-- /content -->
+			<footer data-theme="b" data-role="footer" data-position="fixed">
+				<nav data-role="navbar">
+					<ul>
+						<li>
+							<a href="#home" class="ui-btn ui-icon-grid ui-btn-icon-top">Home</a>
+						</li>
+
+						<li>
+							<a href="#location" class="ui-btn ui-icon-location ui-btn-icon-top">Submit Your List</a>
+						</li>
+						<li>
+							<a href="#hours" class="ui-btn ui-icon-clock ui-btn-icon-top">The List Of Books</a>
+						</li>
+						<li>
+							<a href="#blogItemList" class="ui-btn ui-icon-edit ui-btn-icon-top">Blog</a>
+						</li>
+
+					</ul>
+				</nav>
+			</footer><!-- footer -->
+		</section><!-- page: hours-->
+		<script src="js/script.js"></script>
+	</body>
+</html>
