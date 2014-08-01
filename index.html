@@ -25,15 +25,36 @@
 	</head>
 	<body>
 		<section data-role="page" id="home">
-			<header data-theme="c" data-role="header">
-				<h2>The Top Ten Books</h2>
+			<header data-theme="b" data-role="header" data-position="fixed">
+				<nav data-role="navbar">
+				<ul>
+					<li>
+						<a href="#home" class="ui-btn ui-icon-grid ui-btn-icon-top">Home</a>
+					</li>
+
+					<li>
+						<a href="#location" class="ui-btn ui-icon-location ui-btn-icon-top">Submit Your List</a>
+					</li>
+					<li>
+						<a href="#hours" class="ui-btn ui-icon-clock ui-btn-icon-top">The List Of Books</a>
+					</li>
+					<li>
+						<a href="#blogItemList" class="ui-btn ui-icon-edit ui-btn-icon-top">List of Blog Entries</a>
+					</li>
+					<li>
+						<a href="#about-editor" class="ui-btn  ui-icon-info ui-btn-icon-top" data-rel="dialog" data-transition="pop">About Editor</a>
+					</li>
+
+				</ul>
+				</nav>
+<!-- 				<h2>The Top Ten Books</h2>
 				<a href="#home" class="ui-btn-left ui-btn ui-btn-inline
 				ui-mini ui-corner-all
 				ui-icon-home" data-theme="a">Home</a>
 
 				<a href="#about-editor" class="ui-btn-right ui-btn ui-btn-inline
 				ui-mini ui-corner-all
-				ui-icon-info" data-rel="dialog" data-transition="pop">About Editor</a>
+				ui-icon-info" data-rel="dialog" data-transition="pop">About Editor</a> -->
 
 			</header><!-- header -->
 			<article data-role="content" id="home-content" data-theme="c">
@@ -54,25 +75,9 @@
 				
 
 			</article><!-- /content -->
-			<footer data-theme="b" data-role="footer" data-position="fixed">
-				<nav data-role="navbar">
-					<ul>
-						<li>
-							<a href="#home" class="ui-btn ui-icon-grid ui-btn-icon-top">Home</a>
-						</li>
+			<footer data-theme="c" data-role="footer" data-position="fixed">
+				<h1>The Top Ten Books</h1>
 
-						<li>
-							<a href="#location" class="ui-btn ui-icon-location ui-btn-icon-top">Submit Your List</a>
-						</li>
-						<li>
-							<a href="#hours" class="ui-btn ui-icon-clock ui-btn-icon-top">The List Of Books</a>
-						</li>
-						<li>
-							<a href="#blogItemList" class="ui-btn ui-icon-edit ui-btn-icon-top">List of Blog Entries</a>
-						</li>
-
-					</ul>
-				</nav>
 			</footer><!-- footer -->
 		</section><!-- / home page -->
 
